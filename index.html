@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body class="bg-[var(--Paleblue)] flex justify-center items-center h-screen">
+    <section class=" rounded-b-3xl md:rounded-3xl max-w-xl md:h-[60vh] bg-white flex flex-col md:flex-row">
+      <div
+        class="w-full md:w-1/2 p-8 text-white h-full rounded-3xl bg-linear-to-b from-[var(--Lightslateblue)] to-[var(--Lightroyalblue)]"
+      >
+        <h3 class="text-center">Your Results</h3>
+        <div class="shadow-lg mx-auto my-4 rounded-full flex justify-center items-center h-[130px] w-[130px] bg-linear-to-b from-[var(--Lightslateblue)] to-[var(--Lightroyalblue)]">
+          <h1>
+           <span style="font-size: 50px; font-weight: 700;">76</span> 
+            <br />
+            Of 100
+          </h1>
+        </div>
+        <h1 class="font-bold text-center m-4">Great</h1>
+        <p class="text-normal text-center">
+          You scored higher than 65% of the people who have taken these tests
+        </p>
+      </div>
+      <div class="w-full md:w-1/2 p-8">
+        <h3>summary</h3>
+        <div>
+          <div class="flex justify-between bg-red-50 mt-4 rounded-md p-2">
+            <div class="flex flex-row gap-2 text-[var(--Lightred)]">
+              <img src="assets/images/icon-reaction.svg" alt="icon-reaction">
+              <h3>Reaction</h3>
+            </div>
+            <h1><span style="font-weight: 700;">80</span> / 100</h1>
+          </div>
+          <div class="flex justify-between bg-red-50 mt-4 rounded-md p-2">
+            <div class="flex flex-row gap-2">
+              <img src="assets/images/icon-memory.svg" alt="icon-memory">
+              <h3 class="text-[var(--Orangeyellow)]">Memory</h3>
+            </div>
+            <h1><span style="font-weight: 700;">92</span> / 100</h1>
+          </div>
+          <div class="flex justify-between bg-green-50 mt-4 rounded-md p-2">
+            <div class="flex flex-row gap-2">
+              <img src="assets/images/icon-verbal.svg" alt="icon-verbal">
+              <h3 class="text-[var(--Greenteal)]">Verbal</h3>
+            </div>
+            <h1><span style="font-weight: 700;">61</span> / 100</h1>
+          </div>
+          <div class="flex justify-between bg-purple-50 mt-4 rounded-md p-2">
+            <div class="flex flex-row gap-2">
+              <img src="assets/images/icon-visual.svg" alt="icon-visual">
+              <h3 class="text-[var(--Violetblue)]">Visual</h3>
+            </div>
+            <h1><span style="font-weight: 700;">73</span> /100</h1>
+          </div>
+        </div>
+        <button type="button" class="rounded-3xl cursor-pointer border text-white hover:bg-[var(--Lightslateblue)] bg-[var(--Darkgrayblue)] p-2 w-[100%] m-4 mx-auto">Continue</button>
+      </div>
+     </section>
+  </body>
+</html>
